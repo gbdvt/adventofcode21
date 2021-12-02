@@ -54,4 +54,4 @@ print(t)
 
 # or sexy one liner ;)
 # print(sum(1 for i in range(len(open("file.txt", "r").read().splitlines())) if (i>0 and int(open("file.txt", "r").read().splitlines()[i])>int(open("file.txt", "r").read().splitlines()[i-1]))))
-# The code is slower because the file is opened 3 times, a variable called data can be added, but that would make a two-liner.
+# print(sum(int(numbers[i]) > int(numbers[i-1]) for numbers in [open("file.txt", "r").readlines()] for i in range(1, len(numbers))))
